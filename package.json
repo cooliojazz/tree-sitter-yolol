@@ -1,0 +1,23 @@
+{
+  "name": "tree-sitter-yolol",
+  "version": "0.0.4",
+  "description": "A parser for the YOLOL language from the game Starbase",
+  "author": "cooliojazz",
+  "license": "ISC",
+  "main": "bindings/node",
+  "repository": "https://github.com/cooliojazz/tree-sitter-yolol",
+  "scripts": {
+    "install": "prebuild-install || node-gyp rebuild",
+    "pre-build": "prebuild --all --strip --verbose",
+    "pre-build:upload": "prebuild --upload-all",
+    "test": "tree-sitter test",
+  },
+  "dependencies": {
+    "nan": "^2.15.0",
+    "prebuild-install": "^6.1.4"
+  },
+  "devDependencies": {
+    "prebuild": "^11.0.0",
+    "tree-sitter-cli": "^0.20.0"
+  }
+}
